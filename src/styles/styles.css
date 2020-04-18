@@ -1,0 +1,179 @@
+body {
+    padding:0;
+    margin:0;
+    color: white;
+}
+.App{
+    background-color: lightcoral;
+    width: 100%;
+    height: 1000px;
+}
+
+.logoName{
+    font-size: 35px;
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+/* Slider */
+.bigTitle{
+    /* Make the div center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Other settings */
+    width: 300px;
+    height: 150;
+    border: 5px solid white;
+}
+
+.bigInside {
+    border: 5px solid white;
+    height: 80px;
+    margin:25px 30px ;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.carrousel_wrapper {
+    height:700px;
+    overflow: hidden;
+}
+
+.carrousel_image {
+    
+    background-size: cover !important;
+}
+
+
+/* Countdown */
+
+.countdown_wrapper {
+    /* Pin the countdown to left bottom */
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    color:lightcyan;
+}
+
+.countdown_wrapper .countdown_title {
+    background: lightsalmon;
+    font-size: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.countdown_wrapper .countdown_body{
+    display: flex;
+    background: lightpink;
+    padding: 5px 0px 5px 0px;
+    min-height: 100%;
+
+}
+
+.countdown_wrapper .countdown_time {
+    font-size: 40px;
+    border-right: 1px solid #F44336;
+    margin-left: 20px;
+    padding-right: 20px;
+}
+
+/* Remove border of last element */
+.countdown_wrapper .countdown_item:last-child .countdown_time{
+    border:none;
+}
+
+.countdown_wrapper .countdown_tag {
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+/* Information Board */
+.info_board{
+    background-color: lightcoral;
+}
+
+.center_wrapper{
+    margin: 0 30px;
+}
+
+.inner_center_wrapper{
+    display: flex;
+    padding: 150px 0px;
+}
+
+.item{
+    text-align: center;
+    margin: auto 30px;
+    width: 50%;
+    padding: 5px;
+    align-self: stretch;
+    flex: 1;
+}
+
+.item .outer {
+    /* Note: the border will add outside the div */
+    /* Use box-sizing to include border to padding */
+    box-sizing: border-box;
+    border: 2px solid lightcyan;
+    margin: auto;
+    padding: 5px;
+    margin: 0px;
+
+}
+
+.item .inner { 
+    border: 2px solid lightcyan;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0px;
+    transition: all 500ms ease;
+}
+
+.item .inner:hover{
+    background: lightpink;
+}
+
+.item .icon_background {
+    background-color: lightsalmon;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    /* -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); */
+    transform: translate(-50%, 0) rotate(45deg);
+    top: -40px;
+    left: 50%;
+}
+
+.item .icon {
+    width: 40px;
+    height: 40px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+}
+
+.inner .title{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.inner .detail{
+    margin-top: 5px;;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+
