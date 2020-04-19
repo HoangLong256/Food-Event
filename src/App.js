@@ -5,6 +5,8 @@ import Feature from './components/featured/index';
 import Info from './components/info/index';
 import Highlight from './components/highlightDetails/index';
 import Price from './components/price/index'
+import Location from './components/location/index';
+import Footer from './components/header_footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -13,6 +15,8 @@ function App() {
       <Info/>
       <Highlight/>
       <Price/>
+      <Location/>
+      <Footer/>
     </div>
   );
 }
