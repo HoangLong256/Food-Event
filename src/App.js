@@ -4,6 +4,7 @@ import styles from './styles/styles.css';
 import Feature from './components/featured/index';
 import Info from './components/info/index';
 import Highlight from './components/highlightDetails/index';
+import Price from './components/price/index'
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       <Feature/>
       <Info/>
       <Highlight/>
+      <Price/>
     </div>
   );
 }

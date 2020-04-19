@@ -30,7 +30,6 @@ const Info = () => {
                                 </div>
                             </div>
                         </div>
-
                     </Zoom>
 
                     <Zoom duration={500} delay={500}>
