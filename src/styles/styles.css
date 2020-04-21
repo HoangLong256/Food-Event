@@ -342,7 +342,7 @@ footer{
 /* ======================== */
 /* Mobile */
 /* ======================== */
-@media(max-width:800px) {
+@media(max-width:1000px) {
     .bigTitle{
         width: 100%;
         box-sizing: border-box;
@@ -368,6 +368,15 @@ footer{
     .price_details_wrapper{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
 }
 
+@media(max-width:500px) {
+    .price_item { 
+        border-style: none;
+    }
+
+}

@@ -27,9 +27,7 @@ function App() {
       <Element name="location">
         <Location />
       </Element>
-      <Element name="footer">
         <Footer />
-      </Element>
     </div>
   );
 }
